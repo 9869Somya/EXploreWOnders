@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Kalnia:wght@500&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .row {
+        margin-top: 4.5%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, red, yellow);
+      }
+
+      .column {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        opacity: 0.8;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 30px;
+      }
+      .puri {
+        font-size: 70px;
+        position: absolute;
+        top: 25%;
+        left: 37%;
+        color: rgb(255, 255, 255);
+      }
+      .puri h1 {
+        font-family: "Courgette", cursive;
+        font-weight: 800;
+      }
+      .tag {
+        font-size: 70px;
+        position: absolute;
+        top: 45%;
+        left: 22%;
+        color: white;
+        font-family: "Whisper", cursive;
+        font-weight: 550;
+      }
+
+      .link {
+        font-size: 40px;
+        position: absolute;
+        top: 80%;
+        right: 2%;
+      }
+      .link a {
+        color: #7e30e1;
+        font-weight: bold;
+      }
+      .content {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .content h1 {
+        font-size: 40px;
+        text-decoration: underline;
+      }
+      .content a {
+        text-decoration: underline;
+        color: blue;
+      }
+      .content .img_div {
+        display: flex;
+        gap: 3%;
+        margin-left: 4%;
+      }
+      .content .img_div img {
+        border-radius: 20px;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><span>EX</span>plore<span>WO</span>nders</a>
+      <nav class="navbar">
+        <a href="./homepage.html">Home</a>
+        <!-- <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a> -->
+        <a href="./gallery.html">Gallery</a>
+        <a href="./hotel1.html">Hotels</a>
+        <!-- <a href="#review">Review</a> -->
+        <a href="./query.html">Inquiry</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./faq.html">FAQS</a>
+      </nav>
+    </header>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://e0.pxfuel.com/wallpapers/719/140/desktop-wallpaper-shri-jagannath-odisha-puri.jpg"
+          style="width: 100%; height: 90%"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://3.imimg.com/data3/KV/VL/MY-9626426/puri-jagannath-500x500.jpg"
+          style="width: 100%"
+        />
+        <img
+          src="https://images.moneycontrol.com/static-mcnews/2023/06/Jagannath-770x433.png?impolicy=website&width=770&height=431"
+          style="width: 100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://t3.ftcdn.net/jpg/02/44/87/76/360_F_244877656_TIT8ko9Vvm4JZs4S9mL4FBNOmVI7NpXh.jpg"
+          style="width: 100%"
+        />
+        <img
+          src="https://thumbs.dreamstime.com/b/emami-temple-second-jagannath-odisha-balasore-district-also-known-puri-170060514.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="https://odishatour.in/wp-content/uploads/2022/09/penthakata-sea-beach-aerial-view.jpg"
+          style="width: 100%"
+        />
+        <img
+          src="https://live.staticflickr.com/2876/33243480405_838a64693b_b.jpg"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+    <div class="puri">
+      <h1>P U R I</h1>
+    </div>
+    <div class="tag">"Discover Puri: Heritage in Every Wave"</div>
+    <div class="link">
+      <a href="./hotel.html">Go to Hotels &#8594;</a>
+    </div>
+    <section class="content">
+      <p>
+        The <b>Jagannath Temple</b> is an important Hindu temple dedicated to
+        Jagannath, a form of Vishnu, one of the trinity of supreme divinity in
+        Hinduism. Puri is in the state of Odisha, on the eastern coast of India.
+        King Indradyumna of Avanti has built the main temple of Jagannath at
+        Puri.
+      </p>
+      <p>
+        The Puri temple is famous for its annual <b>Ratha Yatra</b>, or chariot
+        festival, in which the three principal deities are pulled on huge and
+        elaborately decorated temple cars, Worship is performed by the Bhil
+        Sawar tribal priests as well as priests of other communities in the
+        Jagannath temple.<a
+          href="https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri#:~:text=The%20Jagannath%20Temple%20is%20an,temple%20of%20Jagannath%20at%20Puri."
+          >Read more</a
+        >
+      </p>
+      <br />
+      <div class="img_div">
+        <img
+          src="https://i0.wp.com/indiacurrents.com/wp-content/uploads/2022/06/Jagannath-Dev-in-Puri.png?fit=1200%2C740&ssl=1"
+          width="50%"
+          height="50%"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rath_Yatra_Puri_07-11027.jpg/480px-Rath_Yatra_Puri_07-11027.jpg"
+          alt=""
+        />
+      </div>
+      <br />
+      <br />
+      <h1>Rules & Guidelines</h1>
+      <br />
+      <p>
+        Puri, a captivating city on India's eastern coast, offers a mix of
+        cultural richness and natural beauty. While exploring, keep in mind that
+        the Jagannath Temple, a spiritual epicenter, has dress code
+        restrictions, requiring modest attire. As you wander through the vibrant
+        markets, relish local seafood delicacies like the famous Puri
+        Mahaprasad.
+      </p>
+      <br />
+      <p>
+        Puri's pristine beaches provide a serene escape, but note that swimming
+        can have restrictions due to strong currents. Visit the Sun Temple in
+        Konark, a UNESCO World Heritage site, showcasing architectural
+        brilliance. The Chandrabhaga Beach is another gem for tranquil moments.
+      </p>
+      <br />
+      <p>
+        When it comes to attire, lightweight, comfortable clothing is advisable,
+        especially if you plan to visit during the hot and humid months. Don't
+        forget sunscreen and a hat for sun protection.
+      </p>
+      <br />
+      <p>
+        Puri also hosts the grand Rath Yatra, a chariot festival attracting
+        millions. During this time, the city buzzes with energy, but be prepared
+        for increased crowds and potential travel disruptions.
+      </p>
+      <br />
+      <p>
+        Respect local customs, such as taking off shoes before entering certain
+        places. Embrace the vibrant culture, savor local cuisine, and adhere to
+        any religious or safety guidelines for a fulfilling experience in this
+        culturally rich and enchanting destination.
+      </p>
+      <br />
+    </section>
+  </body>
+</html>

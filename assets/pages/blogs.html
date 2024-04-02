@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./css/blogs.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><span>EX</span>plore<span>WO</span>nders</a>
+      <nav class="navbar">
+        <a href="./homepage.html">Home</a>
+        <!-- <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a> -->
+        <a href="./gallery.html">Gallery</a>
+        <a href="./hotel1.html">Hotels</a>
+        <!-- <a href="#review">Review</a> -->
+        <a href="./query.html">Inquiry</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./faq.html">FAQS</a>
+      </nav>
+    </header>
+    <!-- <form id="blogForm">
+      <h1>Create your own blog</h1>
+      <label for="image">Image:</label>
+      <input
+        type="file"
+        id="image"
+        name="image"
+        accept="image/*"
+        required
+      /><br />
+
+      <label for="date">Date:</label>
+      <input type="text" id="date" name="date" required /><br />
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required /><br />
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea><br />
+
+      <input
+        type="submit"
+        id="submit"
+        value="Submit"
+        style="
+          background: linear-gradient(to right, #ee7214 0%, #ffc47e 100%);
+          color: white;
+          font-weight: bolder;
+        "
+      />
+    </form> -->
+
+    <!-- <script>
+      async function submitForm() {
+        //const form = document.getElementById("blogForm");
+        //const formData = new FormData(form);
+        const text = document.getElementById("date");
+        const title = document.getElementById("title");
+        const description = document.getElementById("description");
+        console.log(text.value, title.value, description.value);
+        try {
+          const response = await fetch("http://localhost:8000/posts", {
+            method: "POST",
+            body: {
+              date: text.value,
+              title: title.value,
+              image:
+                "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww",
+              description: description.value,
+            },
+          });
+
+          if (response.ok) {
+            alert("Blog post created successfully!");
+            // You may want to reload the page or update the UI here
+          } else {
+            alert("Error creating blog post.");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      }
+    </script> -->
+
+    <!-- Include your existing code to display blog posts -->
+
+    <div class="blogs"></div>
+
+    <form id="blogForm">
+      <div class="left">
+        <h1>Create your own blog</h1>
+      </div>
+      <div class="right">
+        <label for="image">Image:</label>
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept="image/*"
+          required
+        /><br />
+
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required /><br />
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required /><br />
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br />
+
+        <input
+          type="submit"
+          id="submit"
+          value="Submit"
+          style="
+            background: linear-gradient(to right, #ee7214 0%, #ffc47e 100%);
+            color: white;
+            font-weight: bolder;
+            padding-top: 1rem;
+            font-size: 15px;
+          "
+        />
+      </div>
+    </form>
+    <script src="./js/blogs.js"></script>
+    <script>
+      let http = new XMLHttpRequest();
+      http.open("GET", "http://localhost:8000/posts", true);
+      http.send();
+
+      http.onload = function () {
+        console.log("Status:", this.status);
+        console.log("Response:", this.responseText);
+
+        if (this.readyState == 4 && this.status == 200) {
+          let blogs = JSON.parse(this.responseText);
+          let output = "";
+
+          for (let item of blogs) {
+            output += `
+            <div class="news_section">
+              <div class="news_section_image">
+                <img src="${item.image}" alt="${item.image}" />
+              </div>
+              <div class="second_half">
+                <div class="post_date">
+                  <span>${item.date}</span>
+                </div>
+                <h2 class="news_title">${item.title}</h2>
+                <p class="news_text">${item.description}.</p>
+                <br /><br />
+                <input type="checkbox" id="btn1" />
+                <label for="btn1"></label>
+              </div>
+            </div>
+          `;
+          }
+          document.querySelector(".blogs").innerHTML = output;
+        }
+      };
+    </script>
+  </body>
+</html>

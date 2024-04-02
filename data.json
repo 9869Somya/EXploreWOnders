@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "date": "Nov 24 2023",
+      "title": "Rajat Mehta - Trip to Gangtok",
+      "image": "https://media.istockphoto.com/id/515792454/photo/buddha-park-ravangla.jpg?s=612x612&w=0&k=20&c=6R5vX7MAdFUdSIhH4zTbTxub2JEc6fak880ardwWNaE=",
+      "description": "Nestled in the Himalayas, Gangtok captivated me with its serene beauty and warm hospitality. Exploring MG Marg's vibrant shops and local delights, I felt the city's friendly atmosphere. The awe-inspiring Nathula Pass, peaceful Tsomgo Lake, and the culturally rich Rumtek Monastery showcased the region's natural and spiritual treasures."
+    },
+    {
+      "id": 2,
+      "date": "Apr 18 2023",
+      "title": "Sneha Joshi - Trip to Kerela",
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww",
+      "description": "Kerala, on India's coast, amazed me with its greenery and friendly vibes. Cruising in an Alleppey houseboat through calm backwaters, surrounded by palm trees and villages, was a highlight. Kathakali dances and the delicious smells of Fort Kochi's spicy food immersed me in Kerala's culture. "
+    },
+    {
+      "id": 3,
+      "date": "Jan 07 2021",
+      "title": "Diya Reddy - Trip to Dalhousie",
+      "image": "https://e0.pxfuel.com/wallpapers/1003/392/desktop-wallpaper-grand-himachal-with-amritsar-10-days-and-9-nights-tour-package-india-dalhousie.jpg",
+      "description": "Nestled in Himachal Pradesh's mountains, Dalhousie became my serene escape. Subhash Chowk's colonial charm and the vibrant Tibetan market captivated me. Along Mall Road, I savored local treats and shopped for crafts."
+    },
+    {
+      "id": 4,
+      "date": "Aug 28 2019",
+      "title": "Aarav Kumar - Trip to Varanasi",
+      "image": "https://www.thepolicychronicle.co.in/wp-content/uploads/2021/07/2714802.jpg",
+      "description": "Varanasi, by the Ganges River, was like stepping into a different world. The special prayer ceremony at Dashashwamedh Ghat was incredible, with fire, bells, and lots of prayers. Walking around, I saw busy markets selling colorful things and calm ashrams for quiet moments."
+    },
+    {
+      "id": 5,
+      "date": "Nov 18 2019",
+      "title": "Sneha Joshi - Trip to Kerela",
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww",
+      "description": "Khajjiar, the 'Mini Switzerland,' with its meadows and serene lake, left a lasting impression. Panchpula's waterfalls and St. John's Church added historical charm. Simple pleasures like horse rides and hot momos made each moment delightful. The Dainkund Peak, offering breathtaking views, became my peaceful spot.As the sun set behind the mountains, Dalhousie gifted me tranquility. This mountain retreat, with its simplicity and natural beauty, etched a cherished memory in my travel diary."
+    },
+    {
+      "id": 6,
+      "date": "Nov 29 2018",
+      "title": "Sneha Joshi - Trip to Kerela",
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fHww",
+      "description": "Varkala's sunny beaches, where golden sands meet the Arabian Sea, were a peaceful escape. Visiting Munnar's tea gardens revealed rolling hills covered in vibrant green.The warmth of the locals, seen in their smiles and felt in experiences like savoring Kerala Sadhya or watching Theyyam dance, made my journey special. Kerala, with its natural beauty and friendly charm, left me with memories of a unique tropical paradise."
+    }
+  ],
+  "users": [
+    {
+      "name": "Somya Parida",
+      "email": "somya.sikha91780@gmail.com",
+      "password": "123456",
+      "dob": "2023-12-16",
+      "gender": "male",
+      "country": "India",
+      "contact": "09178093292",
+      "travelPreference": "sfefew",
+      "id": 1
+    }
+  ],
+  "queries": [
+    {
+      "name": "Somya",
+      "email": "somya.sikha91780@gmail.com",
+      "query": "     qwrrqrqr       ",
+      "id": 2
+    },
+    {
+      "name": "Somya Parida",
+      "email": "somya.sikha91780@gmail.com",
+      "query": "ahgwdbqwh,fqj\n            ",
+      "id": 3
+    },
+    {
+      "name": "Somya Parida",
+      "email": "somya.sikha91780@gmail.com",
+      "query": "gvsahfbajskf\n            ",
+      "id": 4
+    }
+  ]
+}

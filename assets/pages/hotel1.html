@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/homepage.css" />
+
+    <style>
+      .checked {
+        color: orange;
+      }
+      .section {
+        padding: 100px 8%;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 2rem;
+      }
+      .box {
+        padding: 0px 40px 30px 20px;
+        background: transparent;
+        box-shadow: 5px 30px 56.1276px rgb(55 55 55/12%);
+        border-radius: 10px;
+        position: relative;
+        transition: all 0.35s ease;
+      }
+      .box img {
+        width: 300px;
+        height: 300px;
+      }
+
+      .but {
+        background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+        border: 0;
+        border-radius: 12px;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow 0.2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+      }
+      .but:not([disabled]):focus {
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+          -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+          0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+      }
+      .but:not([disabled]):hover {
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+          -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+          0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+      }
+      .hot {
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <header>
+        <a href="#" class="logo"><span>EX</span>plore<span>WO</span>nders</a>
+        <nav class="navbar">
+          <a href="./homepage.html">Home</a>
+          <!-- <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a> -->
+          <a href="./gallery.html">Gallery</a>
+          <a href="./hotel1.html">Hotels</a>
+          <!-- <a href="#review">Review</a> -->
+          <a href="./query.html">Inquiry</a>
+          <a href="./blogs.html">Blogs</a>
+          <a href="./faq.html">FAQS</a>
+        </nav>
+      </header>
+    </header>
+    <section class="hot" id="hot">
+      <div class="container">
+        <div class="box">
+          <img
+            src="https://360-south.com/wp-content/uploads/2023/03/13-1.png"
+          />
+          <br />
+          <br />
+          <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <br />
+          <h2>360 South</h2>
+
+          <h2 style="color: grey">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            porro ex tempora
+          </h2>
+          <br />
+          <h2>&#8360; 3000 Onwards</h2>
+          <br />
+          <br />
+          <button type="button" class="but" onclick="func1()">Book Now</button>
+        </div>
+        <div class="box">
+          <img
+            src="https://media.weddingz.in/images/642e4e94a11c6fc0de232cf76676c378/the-dukes-retreat-the-dukes-retreat-poolside-1.jpg"
+          />
+          <br />
+          <br />
+          <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <br />
+          <h2>Duke Retreat</h2>
+          <h2 style="color: grey">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            porro ex tempora
+          </h2>
+          <br />
+
+          <h2>&#8360; 3000 Onwards</h2>
+          <br />
+          <br />
+
+          <button type="button" class="but" onclick="func()">Book Now</button>
+        </div>
+        <div class="box">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.yrJhmX5_BJZCPIFs7zsgLAHaEo&pid=Api&P=0&h=220"
+          />
+          <br />
+          <br />
+          <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <br />
+          <h2>Crowny Hotel</h2>
+          <h2 style="color: grey">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            porro ex tempora
+          </h2>
+          <br />
+
+          <h2>&#8360; 3000 Onwards</h2>
+          <br />
+          <br />
+
+          <button class="but" type="button" onclick="func2()">Book Now</button>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.hotel-board.com/picture/elite-world-business-hotel-hotel-6635150.jpg"
+          />
+          <br />
+          <br />
+          <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <br />
+          <h2>Elite Hotel</h2>
+          <h2 style="color: grey">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            porro ex tempora
+          </h2>
+          <br />
+
+          <h2>&#8360; 3000 Onwards</h2>
+          <br />
+          <br />
+
+          <button type="button" class="but" onclick="func3()">Book Now</button>
+        </div>
+        <div class="box">
+          <img
+            src="https://planetadth.com/wp-content/uploads/2022/04/Hillscape-Villa.jpg"
+          />
+          <br />
+          <br />
+          <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <br />
+          <h2>FabEscape Hillscape Villa</h2>
+          <h2 style="color: grey">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            porro ex tempora
+          </h2>
+          <br />
+
+          <h2>&#8360; 3000 Onwards</h2>
+          <br />
+          <br />
+
+          <button type="button" class="but" onclick="func4()">Book Now</button>
+        </div>
+        <div class="box">
+          <img
+            src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/flyfish/raw/NH7320741411442/QS1042/QS1042-Q1/IMG_20191202_120538.jpg"
+          />
+          <br />
+          <br />
+          <br />
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <br />
+          <h2>Velvet County Resort & Spa</h2>
+
+          <h2 style="color: grey">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            porro ex tempora
+          </h2>
+          <br />
+
+          <h2>&#8360; 3000 Onwards</h2>
+          <br />
+          <br />
+
+          <button type="button" class="but" onclick="func5()">Book Now</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function func() {
+        window.open("https://www.dukesretreat.com/");
+      }
+      function func1() {
+        window.open("https://360-south.com/");
+      }
+      function func2() {
+        window.open("http://www.royalpark.in/");
+      }
+      function func3() {
+        window.open(
+          "https://www.booking.com/hotel/in/elite-lonavla12.en-gb.html?aid=357029&label=yho748jc-1DCAsobEIPZWxpdGUtbG9uYXZsYTEySDNYA2hsiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuALMpbWrBsACAdICJGYyMzhkYjkzLTI1ZjUtNDE2ZC05NTAyLTkwOTBhZWNhN2MzZNgCBOACAQ&sid=7536f0ce0e2b2acdfa9860e11dd1c98b&dist=0&keep_landing=1&sb_price_type=total&type=total&"
+        );
+      }
+      function func4() {
+        window.open(
+          "https://www.tripadvisor.ca/Hotel_Review-g1156430-d2454552-Reviews-FabEscape_Hillscape_Villa-Khandala_Lonavala_Pune_District_Maharashtra.html"
+        );
+      }
+      function func5() {
+        window.open(
+          "https://www.tripadvisor.in/Hotel_Review-g1156430-d13115666-Reviews-Velvet_County_Resort_Spa-Khandala_Lonavala_Pune_District_Maharashtra.html?spAttributionToken=MjEyMTU3NjY"
+        );
+      }
+    </script>
+  </body>
+</html>
