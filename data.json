@@ -54,6 +54,17 @@
       "contact": "09178093292",
       "travelPreference": "sfefew",
       "id": 1
+    },
+    {
+      "name": "Somya Parida",
+      "email": "s@gmail.com",
+      "password": "3456678",
+      "dob": "2024-05-15",
+      "gender": "male",
+      "country": "India",
+      "contact": "09178093292",
+      "travelPreference": "Goa",
+      "id": 2
     }
   ],
   "queries": [
